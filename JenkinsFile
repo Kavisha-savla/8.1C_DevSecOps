@@ -19,7 +19,7 @@ pipeline {
         stage('Security Scan') {
             steps {
                 echo 'Performing security scan with npm audit...'
-                sh 'npm audit'
+                bat 'npm audit'
             }
         }
         stage('Deploy to Staging') {
